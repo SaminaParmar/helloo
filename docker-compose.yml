@@ -1,6 +1,6 @@
 # version: "3.8"
 services:
-  user-service:
+  serviceB:
     build: ./serviceB
     container_name: serviceB
     ports:
@@ -8,7 +8,7 @@ services:
     networks:
       - my-network
 
-  post-service:
+  serviceA:
     build: ./serviceA
     container_name: serviceA
     ports:
